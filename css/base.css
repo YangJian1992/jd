@@ -100,7 +100,7 @@ s, i, em {
 }
 
 .fl {
-    float: left
+    float: left;
 }
 
 .fr {
@@ -128,16 +128,19 @@ s, i, em {
 .site-nav {
     height: 30px;
     line-height: 30px;
-    background-color: #E3E4E5;
+    background-color: #F1F1F1;
 }
-.site-nav-send{
+/*y设置小三角的样式，共用同一段代码*/
+.site-nav-send,
+.site-nav-r .fore{
     position: relative;
-    padding: 0 25px 0 10px;
+    padding: 0 25px 0 5px;
 }
 .site-nav-send:hover{
     background-color: white;
 }
-.site-nav-send i {
+.site-nav-send i,
+.fore i {
     position: absolute;
     top: 12px;
     right: 8px;
@@ -147,9 +150,37 @@ s, i, em {
     overflow: hidden;
 }
 /*小三角图标，由上下两个样式完成*/
-.site-nav-send s {
+.site-nav-send s,
+.fore s{
+    font: 400 13px/15px "consolas";
     position: absolute;
     top: -7px;
     /*行内元素不能设置上下margin，这里不能直接用margin-top，但可以使用display:block*/
 }
 /*site-nav部分结束*/
+
+.site-nav-r li{
+    padding: 0 10px;
+    float: left;
+}
+.site-nav-r .line{
+    width: 1px;
+    height: 12px;
+    background-color: #DDDDDD;
+    /*由于padding可以继承背景，所以用margin*/
+    margin-top: 9px;
+    padding: 0px; /*由于在样式site-nav-r li中将所有的li元素设置成左右padding为10，还要考虑选择器的优先级，如标签，类等
+！import的权限是最大的。权限可以叠加，如.site-nav-r li为11（10+1），.site-nav-r .line为20（10+10）*/
+}
+.site-nav-r .jd-tel {
+    padding-left: 25px;
+}
+.jd-tel span {
+    /*开启绝对定位会将行内元素变成块元素*/
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    top: 5px;
+    left: 9px;
+    background: url("../images/tel.png") no-repeat;
+}

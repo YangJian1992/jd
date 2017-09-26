@@ -210,7 +210,6 @@ s, i, em {
     height: 60px;
     width: 362px;
     padding: 20px 0;
-    background-color: pink;
 }
 .search-logo a {
     display: block;
@@ -272,8 +271,23 @@ s, i, em {
     position: absolute;
     right: 10px;
     color: #999;
-    font-family: "SimSun";
+    font: 13px/34px  "SimSun";
 
+}
+.icon3 {
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    top: 0;
+    /*故意不给出left的值，该元素会出现在行内元素或者padding-left的空白之后，而不是左上角*/
+    /*left: 0;*/
+    background-color: #C81623;
+    /*给文字设置行高，否则文本内容在下面*/
+    line-height: 14px;
+    text-align: center;
+    color: white;
+    /*设置圆角：左上，右上，右下，左下*/
+    border-radius: 40% 40% 40% 0;
 }
 
 
@@ -281,5 +295,16 @@ s, i, em {
     float: left;
     width: 530px;
     height: 28px;
-    background-color: pink;
+    line-height: 28px;
+    color: #666;
+}
+.search-moreAlink a {
+    float: left;
+    /*white-space: nowrap;文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。*/
+    white-space: nowrap;
+    margin-right: 15px;
+    text-decoration: none;
+}
+.search-moreAlink:first-child {
+    color: #f10215;
 }

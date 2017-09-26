@@ -207,24 +207,75 @@ s, i, em {
 
 .search-logo{
     float: left;
-    height: 100px;
+    height: 60px;
     width: 362px;
+    padding: 20px 0;
     background-color: pink;
 }
+.search-logo a {
+    display: block;
+    width: 270px;
+    height: 60px;
+    /*text-indent 属性规定文本块中首行文本的缩进。*/
+    text-indent: -99999em;
+    background: url("../images/logo.png") no-repeat;
+}
+
 .search-input{
     float: left;
-    width: 538px;
-    height: 61px;
-    background-color: blue;
+    /*width: 538px;*/
+    height: 36px;
+    padding-top: 25px;
+    /*background-color: blue;*/
+}
+.search-input input{
+    float: left;
+    width: 448px;
+    height: 32px;
+    /*输入框中留出4px的空白，文字编辑部分应该为内容区，红色的为border*/
+    padding-left: 4px;
+    /*400为正常粗细*/
+    font: 400 14px/32px "microsoft yahei";
+    color: rgb(153, 153, 153);
+    border: 2px solid #B61D1D;
+    /*清空右边框，方便后面的操作*/
+    border-right: 0;
+}
+.search-input button {
+    width: 85px;
+    height: 36px;
+    color: #fff;
+    font: 400 16px/36px "microsoft yahei";
+    background-color: #B61D1D;
+    cursor: pointer;/*变成小手*/
 }
 .search-car{
+    position: relative;
     float: right;
-    width: 139px;
+    width: 96px;
     height: 34px;
+    line-height: 34px;
+    padding-left: 43px;
     margin: 25px 65px 0 0;
     border: 1px solid #DFDFDF;
     background-color: #F9F9F9;
 }
+.icon1 {
+    position: absolute;
+    top: 9px;
+    left: 18px;
+    height: 16px;
+    width: 18px;
+    background: url(../images/tel.png) no-repeat 0 -58px;
+}
+.icon2 {
+    position: absolute;
+    right: 10px;
+    color: #999;
+    font-family: "SimSun";
+
+}
+
 
 .search-moreAlink{
     float: left;

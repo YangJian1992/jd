@@ -184,3 +184,51 @@ s, i, em {
     left: 9px;
     background: url("../images/tel.png") no-repeat;
 }
+
+.top-banner {
+    background-color: #EB6595;
+}
+.tb {
+    position: relative;
+}
+.close-banner {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 19px;
+    height: 19px;
+    background: url("../images/close-banner.png") no-repeat;
+}
+
+/*巧妙地改变了背景图的位置*/
+.close-banner:hover {
+    background-position: bottom;
+}
+
+.search-logo{
+    float: left;
+    height: 100px;
+    width: 362px;
+    background-color: pink;
+}
+.search-input{
+    float: left;
+    width: 538px;
+    height: 61px;
+    background-color: blue;
+}
+.search-car{
+    float: right;
+    width: 139px;
+    height: 34px;
+    margin: 25px 65px 0 0;
+    border: 1px solid #DFDFDF;
+    background-color: #F9F9F9;
+}
+
+.search-moreAlink{
+    float: left;
+    width: 530px;
+    height: 28px;
+    background-color: pink;
+}
